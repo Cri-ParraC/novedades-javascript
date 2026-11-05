@@ -3,10 +3,10 @@
 
 // Después
 
-const billion = 1000_000_000;
+const milMillones = 1000_000_000;
 
-const trillion = 1000_000_000_000n; // BigInt number
+const billon = 1000_000_000_000n; // Número BigInt
 
-const binaryLiteral = 0b1010_1010;
+const literalBinario = 0b1010_1010;
 
-const hexLiteral = 0xFF_FF_FF_FF;
+const literalHexadecimal = 0xFF_FF_FF_FF;

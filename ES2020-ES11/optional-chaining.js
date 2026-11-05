@@ -1,23 +1,23 @@
-let vehicle1 = {
-  car: {
-    name: 'ABC',
-    speed: 90
+let vehiculo1 = {
+  coche: {
+    nombre: 'ABC',
+    velocidad: 90
   }
 };
 
-let vehicle2 = {
+let vehiculo2 = {
 };
 
-let vehicle3;
+let vehiculo3;
 
-console.log(vehicle1.car); // => { name: 'ABC', speed: 90 }
-console.log(vehicle1.car.name); // => ABC
-console.log(vehicle1.car.speed); // => 90
+console.log(vehiculo1.coche); // => { nombre: 'ABC', velocidad: 90 }
+console.log(vehiculo1.coche.nombre); // => ABC
+console.log(vehiculo1.coche.velocidad); // => 90
 
-console.log(vehicle2.car); // => undefined
-console.log(vehicle2.car?.name); // => undefined
-console.log(vehicle2.car?.speed); // => undefined
+console.log(vehiculo2.coche); // => undefined
+console.log(vehiculo2.coche?.nombre); // => undefined
+console.log(vehiculo2.coche?.velocidad); // => undefined
 
-console.log(vehicle3?.car); // => undefined
-console.log(vehicle3?.car?.name); // => undefined
-console.log(vehicle3?.car?.speed); // => undefined
+console.log(vehiculo3?.coche); // => undefined
+console.log(vehiculo3?.coche?.nombre); // => undefined
+console.log(vehiculo3?.coche?.velocidad); // => undefined

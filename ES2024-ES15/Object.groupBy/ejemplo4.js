@@ -1,19 +1,20 @@
-const people = [
-  { name: "John", age: 70 },
-  { name: "Kane", age: 5 },
-  { name: "Jack", age: 50 },
-  { name: "Rambo", age: 15 }
+const personas = [
+  { nombre: "Juan", edad: 70 },
+  { nombre: "Lucía", edad: 5 },
+  { nombre: "Pedro", edad: 50 },
+  { nombre: "Marta", edad: 15 }
 ];
 
-// Callback function to categorize people based on age 
-const groupByAge = Object.groupBy(people, ({ age }) => {
-  if (age >= 60) {
-    return "senior";
-  } else if (age > 17 && age < 60) {
-    return "adult";
+// Función callback que clasifica a las personas según su edad
+const agrupadoPorEdad = Object.groupBy(personas, ({ edad }) => {
+  if (edad >= 60) {
+    return "mayor";
+  } else if (edad > 17 && edad < 60) {
+    return "adulto";
   }
   else {
-    return "kid";
+    return "niño";
   }
 });
-console.log(groupByAge);
+
+console.log(agrupadoPorEdad);

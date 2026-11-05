@@ -1,13 +1,13 @@
-const inventory = [
-  { type: 'fruit', subType: 'citrus', name: 'orange', quantity: 10 },
-  { type: 'fruit', subType: 'berry', name: 'strawberry', quantity: 30 },
-  { type: 'vegetable', subType: 'root', name: 'carrot', quantity: 20 },
-  { type: 'vegetable', subType: 'leafy', name: 'lettuce', quantity: 15 },
-  { type: 'fruit', subType: 'citrus', name: 'lemon', quantity: 5 }
+const inventario = [
+  { tipo: 'fruta', subtipo: 'cítrico', nombre: 'naranja', cantidad: 10 },
+  { tipo: 'fruta', subtipo: 'baya', nombre: 'fresa', cantidad: 30 },
+  { tipo: 'verdura', subtipo: 'raíz', nombre: 'zanahoria', cantidad: 20 },
+  { tipo: 'verdura', subtipo: 'hoja', nombre: 'lechuga', cantidad: 15 },
+  { tipo: 'fruta', subtipo: 'cítrico', nombre: 'limón', cantidad: 5 }
 ];
 
-const groupByTypeAndSubType = Object.groupBy(inventory, ({ type, subType }) => // Agrupa según la propiedad `type` y `subType`
-  `${type}::${subType}` // Clave compuesta con `type` y `subType`
+const agrupadoPorTipoYSubtipo = Object.groupBy(inventario, ({ tipo, subtipo }) => // Agrupa según las propiedades `tipo` y `subtipo`
+  `${tipo}::${subtipo}` // Clave compuesta con `tipo` y `subtipo`
 );
 
-console.log(groupByTypeAndSubType);
+console.log(agrupadoPorTipoYSubtipo);

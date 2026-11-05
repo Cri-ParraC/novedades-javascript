@@ -1,13 +1,13 @@
-const inventory = [
-  { name: 'asparagus', type: 'vegetables', quantity: 5 },
-  { name: 'bananas', type: 'fruit', quantity: 0 },
-  { name: 'goat', type: 'meat', quantity: 23 },
-  { name: 'cherries', type: 'fruit', quantity: 5 },
-  { name: 'fish', type: 'meat', quantity: 22 },
+const inventario = [
+  { nombre: 'espárragos', tipo: 'verduras', cantidad: 5 },
+  { nombre: 'plátanos', tipo: 'fruta', cantidad: 0 },
+  { nombre: 'cabra', tipo: 'carne', cantidad: 23 },
+  { nombre: 'cerezas', tipo: 'fruta', cantidad: 5 },
+  { nombre: 'pescado', tipo: 'carne', cantidad: 22 },
 ];
 
-const groupByType = Object.groupBy(inventory, ({ type }) => // Agrupa según la propiedad `type`
-  type // Clave `type`
+const agrupadoPorTipo = Object.groupBy(inventario, ({ tipo }) => // Agrupa según la propiedad `tipo`
+  tipo // Clave `tipo`
 );
 
-console.log(groupByType);
+console.log(agrupadoPorTipo);

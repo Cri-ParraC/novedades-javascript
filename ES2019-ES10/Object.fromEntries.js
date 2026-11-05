@@ -1,9 +1,9 @@
-const arr = [['a', '1'], ['b', '2'], ['c', '3']];
-const obj = Object.fromEntries(arr);
+const entradas = [['a', '1'], ['b', '2'], ['c', '3']];
+const objeto = Object.fromEntries(entradas);
 
-console.log(obj); // { a: "1", b: "2", c: "3" }
+console.log(objeto); // => { a: "1", b: "2", c: "3" }
 
-const paramsString = 'param1=foo&param2=baz';
-const searchParams = Object.fromEntries(new URLSearchParams(paramsString));
+const cadenaParametros = 'nombre=Ana&ciudad=Madrid';
+const parametrosBusqueda = Object.fromEntries(new URLSearchParams(cadenaParametros));
 
-console.log(searchParams); // => {param1: "foo", param2: "baz"}
+console.log(parametrosBusqueda); // => { nombre: "Ana", ciudad: "Madrid" }

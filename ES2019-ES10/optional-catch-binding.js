@@ -1,13 +1,13 @@
-// With binding parameter(<ES9)
+// Con parámetro en el catch (<ES10)
 try {
-  JSON.parse("{malformedJson");
+  JSON.parse("{jsonMalFormado");
 } catch (error) {
   console.log(error);
 }
 
-// Without binding parameter(ES9)
+// Sin parámetro en el catch (ES10)
 try {
-  JSON.parse("{malformedJson");
+  JSON.parse("{jsonMalFormado");
 } catch {
   console.log("Ocurrió un error al analizar el JSON");
 }
