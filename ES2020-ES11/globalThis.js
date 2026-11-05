@@ -1,4 +1,4 @@
-// Manera antigua de comprobar el objeto global
+// Old way to get the global object
 
 const globalObject =
   (typeof window === "object" && window) ||
@@ -9,6 +9,6 @@ const globalObject =
 
 console.log(globalObject);
 
-// Manera nueva
+// New way
 
 console.log(globalThis);

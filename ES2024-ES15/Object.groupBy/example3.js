@@ -6,8 +6,8 @@ const inventory = [
   { type: 'fruit', subType: 'citrus', name: 'lemon', quantity: 5 }
 ];
 
-const groupByTypeAndSubType = Object.groupBy(inventory, ({ type, subType }) => // Agrupa según la propiedad `type` y `subType`
-  `${type}::${subType}` // Clave compuesta con `type` y `subType`
+const groupByTypeAndSubType = Object.groupBy(inventory, ({ type, subType }) => // Group by the `type` and `subType` properties
+  `${type}::${subType}` // Composite key made of `type` and `subType`
 );
 
 console.log(groupByTypeAndSubType);

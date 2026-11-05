@@ -5,7 +5,7 @@ const people = [
   { name: "Rambo", age: 15 }
 ];
 
-// Callback function to categorize people based on age 
+// Callback function that categorizes people by age
 const groupByAge = Object.groupBy(people, ({ age }) => {
   if (age >= 60) {
     return "senior";
@@ -16,3 +16,5 @@ const groupByAge = Object.groupBy(people, ({ age }) => {
     return "kid";
   }
 });
+
+console.log(groupByAge);

@@ -6,8 +6,8 @@ const inventory = [
   { name: 'fish', type: 'meat', quantity: 22 },
 ];
 
-const groupByType = Object.groupBy(inventory, ({ type }) => // Agrupa según la propiedad `type`
-  type // Clave `type`
+const groupByType = Object.groupBy(inventory, ({ type }) => // Group by the `type` property
+  type // `type` key
 );
 
 console.log(groupByType);

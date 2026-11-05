@@ -10,4 +10,4 @@ const groupByQuantity = Object.groupBy(inventory, ({ quantity }) =>
   quantity < 6 ? 'lowStock' : 'inStock',
 );
 
-console.log(groupBy);
+console.log(groupByQuantity);

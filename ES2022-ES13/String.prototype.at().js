@@ -1,7 +1,7 @@
 const string = '12345';
 
-// Antes
+// Before
 console.log(string[string.length - 2]); // => 4
 
-// Ahora
+// Now
 console.log(string.at(-2));             // => 4

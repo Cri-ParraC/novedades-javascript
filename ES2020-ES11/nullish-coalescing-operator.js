@@ -1,7 +1,7 @@
-const or = '' || 'default';
+const withOr = '' || 'default';
 
-console.log(or); // => 'default'
+console.log(withOr); // => 'default'
 
-const nullish = '' ?? 'default';
+const withNullish = '' ?? 'default';
 
-console.log(nullish); // => ''
+console.log(withNullish); // => ''

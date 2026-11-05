@@ -1,9 +1,9 @@
-// Antes (debías envolver el código en una IIFE)
+// Before (you had to wrap the code in an IIFE)
 (async () => {
-  const valor = await Promise.resolve(42);
-  console.log(valor); // 42
+  const value = await Promise.resolve(42);
+  console.log(value); // => 42
 })();
 
-// Ahora
-const valor = await Promise.resolve(42);
-console.log(valor); // 42
+// Now
+const value = await Promise.resolve(42);
+console.log(value); // => 42

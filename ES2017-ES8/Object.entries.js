@@ -2,6 +2,6 @@ const countries = {
   IN: 'India',
   SG: 'Singapore',
 };
-const arr = Object.entries(countries);
+const entries = Object.entries(countries);
 
-console.log(arr); // => [["IN", "India"], ["SG", "Singapore"]]
+console.log(entries); // => [["IN", "India"], ["SG", "Singapore"]]

@@ -1,7 +1,7 @@
-// Antes
+// Before
 
 
-// Después
+// After
 
 const billion = 1000_000_000;
 
