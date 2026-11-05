@@ -16,3 +16,4 @@ const groupByAge = Object.groupBy(people, ({ age }) => {
     return "kid";
   }
 });
+console.log(groupByAge);
