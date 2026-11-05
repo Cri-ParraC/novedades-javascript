@@ -1,14 +1,14 @@
-// Manera antigua de obtener el objeto global
+// Old way to get the global object
 
-const objetoGlobal =
+const globalObject =
   (typeof window === "object" && window) ||
   (typeof self === "object" && self) ||
   (typeof global === "object" && global) ||
   (function () { return this; })() ||
   Function("return this")();
 
-console.log(objetoGlobal);
+console.log(globalObject);
 
-// Manera nueva
+// New way
 
 console.log(globalThis);

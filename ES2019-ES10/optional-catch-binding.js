@@ -1,13 +1,13 @@
-// Con parámetro en el catch (<ES10)
+// With a catch parameter (<ES10)
 try {
-  JSON.parse("{jsonMalFormado");
+  JSON.parse("{malformedJson");
 } catch (error) {
   console.log(error);
 }
 
-// Sin parámetro en el catch (ES10)
+// Without a catch parameter (ES10)
 try {
-  JSON.parse("{jsonMalFormado");
+  JSON.parse("{malformedJson");
 } catch {
-  console.log("Ocurrió un error al analizar el JSON");
+  console.log("An error occurred while parsing the JSON");
 }

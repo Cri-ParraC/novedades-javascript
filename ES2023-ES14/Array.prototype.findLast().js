@@ -1,7 +1,7 @@
-const numeros = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
 
-const primerPar = numeros.find((numero) => numero % 2 === 0);
-console.log(primerPar); // => 2
+const firstEven = numbers.find((number) => number % 2 === 0);
+console.log(firstEven); // => 2
 
-const ultimoPar = numeros.findLast((numero) => numero % 2 === 0); // Nuevo
-console.log(ultimoPar); // => 4
+const lastEven = numbers.findLast((number) => number % 2 === 0); // New
+console.log(lastEven); // => 4

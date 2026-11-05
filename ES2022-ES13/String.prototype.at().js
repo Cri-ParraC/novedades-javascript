@@ -1,7 +1,7 @@
-const cadena = '12345';
+const string = '12345';
 
-// Antes
-console.log(cadena[cadena.length - 2]); // => 4
+// Before
+console.log(string[string.length - 2]); // => 4
 
-// Ahora
-console.log(cadena.at(-2));             // => 4
+// Now
+console.log(string.at(-2));             // => 4

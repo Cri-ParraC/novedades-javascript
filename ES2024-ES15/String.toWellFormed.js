@@ -1,5 +1,5 @@
-const cadena1 = "Hola mundo \uD815";
-const cadena2 = "Bienvenido a ES2024";
+const str1 = "Hello World \uD815";
+const str2 = "Welcome to ES2024";
 
-console.log(cadena1.toWellFormed()); // => Hola mundo � (los sustitutos sueltos o mal emparejados se reemplazan por U+FFFD (�))
-console.log(cadena2.toWellFormed()); // => Bienvenido a ES2024
+console.log(str1.toWellFormed()); // => Hello World � (lone or mismatched surrogates are replaced with U+FFFD (�))
+console.log(str2.toWellFormed()); // => Welcome to ES2024

@@ -1,7 +1,7 @@
-const numeros = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5];
 
-// Antes
-console.log(numeros[numeros.length - 2]); // => 4
+// Before
+console.log(numbers[numbers.length - 2]); // => 4
 
-// Ahora
-console.log(numeros.at(-2));              // => 4
+// Now
+console.log(numbers.at(-2));              // => 4

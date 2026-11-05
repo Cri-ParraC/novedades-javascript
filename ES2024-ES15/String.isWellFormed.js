@@ -1,7 +1,7 @@
-const cadena1 = "Hola mundo \uD815";
-const cadena2 = "Bienvenido a ES2024";
-const cadena3 = "Bienvenido a ES2024 😀";
+const str1 = "Hello World \uD815";
+const str2 = "Welcome to ES2024";
+const str3 = "Welcome to ES2024 😀";
 
-console.log(cadena1.isWellFormed()); // => false (\uD815 está en el rango de los sustitutos altos (0xD800–0xDBFF) y no va seguido de un sustituto bajo (0xDC00–0xDFFF))
-console.log(cadena2.isWellFormed()); // => true
-console.log(cadena3.isWellFormed()); // => true
+console.log(str1.isWellFormed()); // => false (\uD815 is in the high surrogate range (0xD800–0xDBFF) and is not followed by a low surrogate (0xDC00–0xDFFF))
+console.log(str2.isWellFormed()); // => true
+console.log(str3.isWellFormed()); // => true

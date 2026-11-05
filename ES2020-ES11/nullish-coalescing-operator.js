@@ -1,7 +1,7 @@
-const conOr = '' || 'por defecto';
+const withOr = '' || 'default';
 
-console.log(conOr); // => 'por defecto'
+console.log(withOr); // => 'default'
 
-const conNullish = '' ?? 'por defecto';
+const withNullish = '' ?? 'default';
 
-console.log(conNullish); // => ''
+console.log(withNullish); // => ''
