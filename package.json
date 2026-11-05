@@ -1,0 +1,10 @@
+{
+  "name": "novedades-javascript",
+  "version": "1.0.0",
+  "description": "Examples of the new JavaScript features, edition by edition, since ES2015 (ES6).",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  }
+}
